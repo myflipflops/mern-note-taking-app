@@ -1,0 +1,25 @@
+.desktopContainer{
+  height: 100vh;
+  width: 100vw;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: clamp(15vh, 20vw, 275px) 1fr;
+  grid-template-rows: auto 1fr;
+
+}
+
+.navbar{
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.header {
+  grid-column: 2 / -1;
+  grid-row: 1;
+}
+
+/* Main Content */
+.mainContent {
+  grid-column: 2 / -1;
+}
+  
